@@ -1,0 +1,10 @@
+{
+  "time_signatures": [
+    ["4/4", "Awesome"],
+    ["3/4", "Nice"]
+  ],
+  "tempo": [
+    ["120", "Standard"],
+    ["144", "Lok"]
+  ]
+}
