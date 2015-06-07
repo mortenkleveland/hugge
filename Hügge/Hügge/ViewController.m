@@ -88,7 +88,7 @@ Suggestion *suggestion;
 
 #pragma mark - UIResponder
 
-- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+- (void)motionEnded: (UIEventSubtype)motion withEvent:(UIEvent*)event {
     if (motion == UIEventSubtypeMotionShake) {
         [self randomizeSuggestion];
     }
