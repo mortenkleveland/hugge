@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Genre.h"
+#import "Tempo.h"
+#import "TimeSignature.h"
 
 @interface Suggestion : NSObject
+
+@property Tempo *tempo;
+@property Genre *genre;
+@property TimeSignature *timeSignature;
+
+- (id)init;
 
 @end

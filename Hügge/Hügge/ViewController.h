@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *tempoLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeSignatureLabel;
+@property (weak, nonatomic) IBOutlet UILabel *feelLabel;
+@property (weak, nonatomic) IBOutlet UILabel *genreLabel;
 
 @end
 

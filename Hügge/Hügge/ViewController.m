@@ -10,6 +10,7 @@
 #import "Tempo.h"
 #import "Genre.h"
 #import "TimeSignature.h"
+#import "Suggestion.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,7 @@
 NSMutableSet *tempos;
 NSMutableSet *genres;
 NSMutableSet *timeSignatures;
+Suggestion *suggestion;
 
 @implementation ViewController
 
@@ -29,12 +31,27 @@ NSMutableSet *timeSignatures;
     timeSignatures = [[NSMutableSet alloc]init];
     
     [self parseJSON];
-    // Do any additional setup after loading the view, typically from a nib.
+    suggestion = [self generateRandomSuggestion];
+    [self updateLabels];
+}
+
+- (Suggestion*)generateRandomSuggestion {
+    Suggestion *suggestion = [[Suggestion alloc]init];
+    [suggestion setTempo:[[tempos allObjects] objectAtIndex:0]];
+    [suggestion setTimeSignature:[[timeSignatures allObjects] objectAtIndex:0]];
+    [suggestion setGenre:[[genres allObjects] objectAtIndex:0]];
+    return suggestion;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)updateLabels {
+    [[self tempoLabel] setText:[[suggestion tempo] tempo]];
+    [[self genreLabel] setText:[[suggestion genre] genreTitle]];
+    [[self timeSignatureLabel] setText:[[suggestion timeSignature] timeSignature]];
 }
 
 - (void)parseJSON {
