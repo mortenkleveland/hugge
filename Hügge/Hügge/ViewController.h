@@ -14,7 +14,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *feelLabel;
 @property (weak, nonatomic) IBOutlet UILabel *genreLabel;
 
-- (IBAction)randomizeButtonPressed:(UIButton *)sender;
-
 @end
 

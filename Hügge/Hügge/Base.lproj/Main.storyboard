@@ -72,7 +72,7 @@
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="vAF-di-Id3" firstAttribute="top" secondItem="3Uy-Kd-Nlm" secondAttribute="top" id="2bB-9L-03N"/>
-                                    <constraint firstAttribute="trailing" secondItem="iHs-aQ-Khb" secondAttribute="trailing" id="AlZ-4U-mBA"/>
+                                    <constraint firstAttribute="trailing" secondItem="iHs-aQ-Khb" secondAttribute="trailing" constant="8" id="AlZ-4U-mBA"/>
                                     <constraint firstAttribute="bottom" secondItem="iHs-aQ-Khb" secondAttribute="bottom" id="EcI-IU-etx"/>
                                     <constraint firstAttribute="bottom" secondItem="vAF-di-Id3" secondAttribute="bottom" id="cCL-R8-159"/>
                                     <constraint firstItem="vAF-di-Id3" firstAttribute="leading" secondItem="3Uy-Kd-Nlm" secondAttribute="leading" id="nLG-Yz-5gB"/>
@@ -193,19 +193,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0em-Qq-OmB">
-                                <rect key="frame" x="277" y="550" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="7Lx-4S-jDm"/>
-                                    <constraint firstAttribute="width" constant="46" id="uKA-H8-kAR"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="randomizeButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2dQ-jA-uhX"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -223,9 +210,7 @@
                             <constraint firstItem="1Ld-fc-Ibs" firstAttribute="height" secondItem="fju-cX-e9c" secondAttribute="height" id="TKc-ey-iWN"/>
                             <constraint firstItem="Ffr-VQ-aYK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="UuE-5k-8wn"/>
                             <constraint firstItem="1Ld-fc-Ibs" firstAttribute="height" secondItem="Ffr-VQ-aYK" secondAttribute="height" id="VJM-5f-cYQ"/>
-                            <constraint firstAttribute="centerX" secondItem="0em-Qq-OmB" secondAttribute="centerX" id="YR0-Ap-jLw"/>
                             <constraint firstItem="1Ld-fc-Ibs" firstAttribute="height" secondItem="nEL-We-ZxU" secondAttribute="height" id="duO-w3-cVT"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0em-Qq-OmB" secondAttribute="bottom" constant="20" id="eBd-Ro-RQD"/>
                             <constraint firstItem="nEL-We-ZxU" firstAttribute="top" secondItem="1Ld-fc-Ibs" secondAttribute="bottom" id="lS6-zv-jQH"/>
                             <constraint firstItem="1Ld-fc-Ibs" firstAttribute="height" secondItem="3Uy-Kd-Nlm" secondAttribute="height" id="nZa-5J-9E9"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="fju-cX-e9c" secondAttribute="bottom" id="ovn-gT-8hk"/>
