@@ -37,9 +37,9 @@ Suggestion *suggestion;
 
 - (Suggestion*)generateRandomSuggestion {
     Suggestion *suggestion = [[Suggestion alloc]init];
-    [suggestion setTempo:[[tempos allObjects] objectAtIndex:0]];
-    [suggestion setTimeSignature:[[timeSignatures allObjects] objectAtIndex:0]];
-    [suggestion setGenre:[[genres allObjects] objectAtIndex:0]];
+    [suggestion setTempo:[[tempos allObjects] objectAtIndex:arc4random_uniform((unsigned)tempos.count)]];
+    [suggestion setTimeSignature:[[timeSignatures allObjects] objectAtIndex:arc4random_uniform((unsigned)timeSignatures.count)]];
+    [suggestion setGenre:[[genres allObjects] objectAtIndex:arc4random_uniform((unsigned)genres.count)]];
     return suggestion;
 }
 
