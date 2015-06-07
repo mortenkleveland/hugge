@@ -10,4 +10,9 @@
 
 @interface Genre : NSObject
 
+@property NSString* genreTitle;
+@property NSString* genreDescription;
+
+- (id)initWithTitle: (NSString*)genreTitle andDescription: (NSString*)genreDescription;
+
 @end

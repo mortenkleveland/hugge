@@ -10,4 +10,9 @@
 
 @interface TimeSignature : NSObject
 
+@property NSString* timeSignature;
+@property NSString* timeSignatureDescription;
+
+- (id)initWithTimeSignature: (NSString*)timeSignature andDescription: (NSString*)timeSignatureDescription;
+
 @end

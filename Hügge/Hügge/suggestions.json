@@ -6,5 +6,13 @@
   "tempo": [
     ["120", "Standard"],
     ["144", "Lok"]
+  ],
+  "genre": [
+    ["Bluegrass", "Boring"],
+    ["Rock", "Nice"]
+  ],
+  "feel": [
+    ["happy", "smile"],
+    ["sad", "buhuu"]
   ]
 }

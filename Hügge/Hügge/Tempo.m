@@ -10,4 +10,18 @@
 
 @implementation Tempo
 
+- (id)init {
+    self = [super init];
+    return self;
+}
+
+- (id)initWithTempo: (NSString*)tempo andDescription: (NSString*)tempoDescription {
+    self = [self init];
+    if (self) {
+        [self setTempo:tempo];
+        [self setTempoDescription:tempoDescription];
+    }
+    return self;
+}
+
 @end

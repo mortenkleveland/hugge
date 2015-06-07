@@ -10,4 +10,10 @@
 
 @interface Tempo : NSObject
 
+@property NSString *tempo;
+@property NSString *tempoDescription;
+
+- (id)init;
+- (id)initWithTempo: (NSString*)tempo andDescription: (NSString*)description;
+
 @end

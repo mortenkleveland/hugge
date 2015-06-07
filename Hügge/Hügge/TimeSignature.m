@@ -10,4 +10,13 @@
 
 @implementation TimeSignature
 
+- (id)initWithTimeSignature:(NSString *)timeSignature andDescription:(NSString *)timeSignatureDescription {
+    self = [super init];
+    if (self) {
+        [self setTimeSignature:timeSignature];
+        [self setTimeSignatureDescription:timeSignatureDescription];
+    }
+    return self;
+}
+
 @end

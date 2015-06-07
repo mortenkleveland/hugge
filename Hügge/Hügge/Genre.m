@@ -10,4 +10,13 @@
 
 @implementation Genre
 
+- (id)initWithTitle:(NSString *)genreTitle andDescription:(NSString *)genreDescription {
+    self = [super init];
+    if (self) {
+        [self setGenreTitle:genreTitle];
+        [self setGenreDescription:genreDescription];
+    }
+    return self;
+}
+
 @end
