@@ -11,6 +11,7 @@
 #import "Genre.h"
 #import "TimeSignature.h"
 #import "Suggestion.h"
+#import "Tonality.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,7 @@
 NSMutableSet *tempos;
 NSMutableSet *genres;
 NSMutableSet *timeSignatures;
+NSMutableSet *tonalities;
 Suggestion *suggestion;
 
 @implementation ViewController
@@ -29,6 +31,7 @@ Suggestion *suggestion;
     tempos = [[NSMutableSet alloc]init];
     genres = [[NSMutableSet alloc]init];
     timeSignatures = [[NSMutableSet alloc]init];
+    tonalities = [[NSMutableSet alloc]init];
     
     [self parseJSON];
     suggestion = [self generateRandomSuggestion];
@@ -39,6 +42,7 @@ Suggestion *suggestion;
     Suggestion *suggestion = [[Suggestion alloc]init];
     [suggestion setTempo:[[tempos allObjects] objectAtIndex:arc4random_uniform((unsigned)tempos.count)]];
     [suggestion setTimeSignature:[[timeSignatures allObjects] objectAtIndex:arc4random_uniform((unsigned)timeSignatures.count)]];
+    [suggestion setTonality:[[tonalities allObjects] objectAtIndex:arc4random_uniform((unsigned)tonalities.count)]];
     [suggestion setGenre:[[genres allObjects] objectAtIndex:arc4random_uniform((unsigned)genres.count)]];
     return suggestion;
 }
@@ -52,6 +56,7 @@ Suggestion *suggestion;
     [[self tempoLabel] setText:[[suggestion tempo] tempo]];
     [[self genreLabel] setText:[[suggestion genre] genreTitle]];
     [[self timeSignatureLabel] setText:[[suggestion timeSignature] timeSignature]];
+    [[self tonalityLabel] setText:[[[suggestion tonality] tonality] capitalizedString]];
 }
 
 - (void)parseJSON {
@@ -78,6 +83,12 @@ Suggestion *suggestion;
     for (id arr in jsonTimeSignatures) {
         TimeSignature *t = [[TimeSignature alloc]initWithTimeSignature:[arr objectAtIndex:0] andDescription:[arr objectAtIndex:1]];
         [timeSignatures addObject:t];
+    }
+    
+    NSArray* jsonTonalities = [allKeys objectForKey:@"tonality"];
+    for (id arr in jsonTonalities) {
+        Tonality *t = [[Tonality alloc]initWithTonality:[arr objectAtIndex:0] andDescription:[arr objectAtIndex:1]];
+        [tonalities addObject:t];
     }
 }
 

@@ -226,6 +226,7 @@
                         <outlet property="genreLabel" destination="LUw-mE-u5a" id="5wQ-bD-Xb0"/>
                         <outlet property="tempoLabel" destination="a5M-Lf-fiV" id="PQb-HL-W9C"/>
                         <outlet property="timeSignatureLabel" destination="iHs-aQ-Khb" id="XDO-l7-T70"/>
+                        <outlet property="tonalityLabel" destination="TKf-3J-4Dn" id="vXs-HP-t7Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

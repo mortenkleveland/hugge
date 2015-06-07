@@ -10,12 +10,14 @@
 #import "Genre.h"
 #import "Tempo.h"
 #import "TimeSignature.h"
+#import "Tonality.h"
 
 @interface Suggestion : NSObject
 
 @property Tempo *tempo;
 @property Genre *genre;
 @property TimeSignature *timeSignature;
+@property Tonality *tonality;
 
 - (id)init;
 

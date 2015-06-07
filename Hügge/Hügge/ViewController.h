@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *timeSignatureLabel;
 @property (weak, nonatomic) IBOutlet UILabel *feelLabel;
 @property (weak, nonatomic) IBOutlet UILabel *genreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tonalityLabel;
 
 @end
 

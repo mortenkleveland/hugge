@@ -19,6 +19,7 @@
 		5A67001C1B2446A300D039DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A67001B1B2446A300D039DF /* Images.xcassets */; };
 		5A67001F1B2446A300D039DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A67001D1B2446A300D039DF /* LaunchScreen.xib */; };
 		5A67002B1B2446A300D039DF /* Hu_ggeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A67002A1B2446A300D039DF /* Hu_ggeTests.m */; };
+		5AD9CB7C1B24F43300473148 /* Tonality.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CB7B1B24F43300473148 /* Tonality.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		5A6700241B2446A300D039DF /* HüggeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HüggeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6700291B2446A300D039DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A67002A1B2446A300D039DF /* Hu_ggeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hu_ggeTests.m; sourceTree = "<group>"; };
+		5AD9CB7A1B24F43300473148 /* Tonality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tonality.h; sourceTree = "<group>"; };
+		5AD9CB7B1B24F43300473148 /* Tonality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tonality.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				5A488AD61B249C920047208E /* Tempo.m */,
 				5A488ADE1B249CDF0047208E /* TimeSignature.h */,
 				5A488ADF1B249CDF0047208E /* TimeSignature.m */,
+				5AD9CB7A1B24F43300473148 /* Tonality.h */,
+				5AD9CB7B1B24F43300473148 /* Tonality.m */,
 				5A67000E1B2446A200D039DF /* Supporting Files */,
 			);
 			path = "Hügge";
@@ -244,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A6700171B2446A300D039DF /* ViewController.m in Sources */,
+				5AD9CB7C1B24F43300473148 /* Tonality.m in Sources */,
 				5A6700141B2446A300D039DF /* AppDelegate.m in Sources */,
 				5A6700111B2446A300D039DF /* main.m in Sources */,
 				5A488ADD1B249CD00047208E /* Genre.m in Sources */,

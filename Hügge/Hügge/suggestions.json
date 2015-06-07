@@ -61,13 +61,13 @@
     ["happy", "smile"],
     ["sad", "buhuu"]
   ],
-  "modality": [
-  	["ionian"],
-  	["dorian"],
-  	["phrygian"],
-  	["lydian"],
-  	["mixolydian"],
-  	["aeolian"],
-  	["locrian"]
+  "tonality": [
+  	["ionian", ""],
+  	["dorian", ""],
+  	["phrygian", ""],
+  	["lydian", ""],
+  	["mixolydian", ""],
+  	["aeolian", ""],
+  	["locrian", ""]
   ]
 }
