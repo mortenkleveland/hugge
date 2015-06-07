@@ -20,6 +20,7 @@
 		5A67001F1B2446A300D039DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A67001D1B2446A300D039DF /* LaunchScreen.xib */; };
 		5A67002B1B2446A300D039DF /* Hu_ggeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A67002A1B2446A300D039DF /* Hu_ggeTests.m */; };
 		5AD9CB7C1B24F43300473148 /* Tonality.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CB7B1B24F43300473148 /* Tonality.m */; };
+		5AD9CB7F1B24F75A00473148 /* Feel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CB7E1B24F75A00473148 /* Feel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		5A67002A1B2446A300D039DF /* Hu_ggeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hu_ggeTests.m; sourceTree = "<group>"; };
 		5AD9CB7A1B24F43300473148 /* Tonality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tonality.h; sourceTree = "<group>"; };
 		5AD9CB7B1B24F43300473148 /* Tonality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tonality.m; sourceTree = "<group>"; };
+		5AD9CB7D1B24F75A00473148 /* Feel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feel.h; sourceTree = "<group>"; };
+		5AD9CB7E1B24F75A00473148 /* Feel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				5A6700181B2446A300D039DF /* Main.storyboard */,
 				5A67001B1B2446A300D039DF /* Images.xcassets */,
 				5A67001D1B2446A300D039DF /* LaunchScreen.xib */,
+				5AD9CB7D1B24F75A00473148 /* Feel.h */,
+				5AD9CB7E1B24F75A00473148 /* Feel.m */,
 				5A488ADB1B249CD00047208E /* Genre.h */,
 				5A488ADC1B249CD00047208E /* Genre.m */,
 				5A488AD81B249CA20047208E /* Suggestion.h */,
@@ -255,6 +260,7 @@
 				5A488ADD1B249CD00047208E /* Genre.m in Sources */,
 				5A488AE01B249CDF0047208E /* TimeSignature.m in Sources */,
 				5A488ADA1B249CA20047208E /* Suggestion.m in Sources */,
+				5AD9CB7F1B24F75A00473148 /* Feel.m in Sources */,
 				5A488AD71B249C920047208E /* Tempo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,7 @@
 #import "Tempo.h"
 #import "TimeSignature.h"
 #import "Tonality.h"
+#import "Feel.h"
 
 @interface Suggestion : NSObject
 
@@ -18,6 +19,7 @@
 @property Genre *genre;
 @property TimeSignature *timeSignature;
 @property Tonality *tonality;
+@property Feel *feel;
 
 - (id)init;
 

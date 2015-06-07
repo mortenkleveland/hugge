@@ -12,6 +12,7 @@
 #import "TimeSignature.h"
 #import "Suggestion.h"
 #import "Tonality.h"
+#import "Feel.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,7 @@ NSMutableSet *tempos;
 NSMutableSet *genres;
 NSMutableSet *timeSignatures;
 NSMutableSet *tonalities;
+NSMutableSet *feels;
 Suggestion *suggestion;
 
 @implementation ViewController
@@ -32,6 +34,7 @@ Suggestion *suggestion;
     genres = [[NSMutableSet alloc]init];
     timeSignatures = [[NSMutableSet alloc]init];
     tonalities = [[NSMutableSet alloc]init];
+    feels = [[NSMutableSet alloc]init];
     
     [self parseJSON];
     suggestion = [self generateRandomSuggestion];
@@ -44,6 +47,7 @@ Suggestion *suggestion;
     [suggestion setTimeSignature:[[timeSignatures allObjects] objectAtIndex:arc4random_uniform((unsigned)timeSignatures.count)]];
     [suggestion setTonality:[[tonalities allObjects] objectAtIndex:arc4random_uniform((unsigned)tonalities.count)]];
     [suggestion setGenre:[[genres allObjects] objectAtIndex:arc4random_uniform((unsigned)genres.count)]];
+    [suggestion setFeel:[[feels allObjects] objectAtIndex:arc4random_uniform((unsigned)feels.count)]];
     return suggestion;
 }
 
@@ -57,6 +61,7 @@ Suggestion *suggestion;
     [[self genreLabel] setText:[[suggestion genre] genreTitle]];
     [[self timeSignatureLabel] setText:[[suggestion timeSignature] timeSignature]];
     [[self tonalityLabel] setText:[[[suggestion tonality] tonality] capitalizedString]];
+    [[self feelLabel] setText:[[[suggestion feel] feelTitle] capitalizedString]];
 }
 
 - (void)parseJSON {
@@ -83,6 +88,12 @@ Suggestion *suggestion;
     for (id arr in jsonTimeSignatures) {
         TimeSignature *t = [[TimeSignature alloc]initWithTimeSignature:[arr objectAtIndex:0] andDescription:[arr objectAtIndex:1]];
         [timeSignatures addObject:t];
+    }
+    
+    NSArray* jsonFeels = [allKeys objectForKey:@"feel"];
+    for (id arr in jsonFeels) {
+        Feel *f = [[Feel alloc]initWithTitle: [arr objectAtIndex:0] andDescription:[arr objectAtIndex:1]];
+        [feels addObject:f];
     }
     
     NSArray* jsonTonalities = [allKeys objectForKey:@"tonality"];

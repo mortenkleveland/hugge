@@ -222,7 +222,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="feelLabel" destination="bcv-MC-pe9" id="WjN-41-JWX"/>
+                        <outlet property="feelLabel" destination="GwX-Ns-zhL" id="kLs-t6-LZ4"/>
                         <outlet property="genreLabel" destination="LUw-mE-u5a" id="5wQ-bD-Xb0"/>
                         <outlet property="tempoLabel" destination="a5M-Lf-fiV" id="PQb-HL-W9C"/>
                         <outlet property="timeSignatureLabel" destination="iHs-aQ-Khb" id="XDO-l7-T70"/>
