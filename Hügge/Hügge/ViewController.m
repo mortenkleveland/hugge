@@ -81,4 +81,8 @@ Suggestion *suggestion;
     }
 }
 
+- (IBAction)randomizeButtonPressed:(UIButton *)sender {
+    suggestion = [self generateRandomSuggestion];
+    [self updateLabels];
+}
 @end
