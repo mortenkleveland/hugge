@@ -1,18 +1,73 @@
 {
   "time_signature": [
-    ["4/4", "Awesome"],
-    ["3/4", "Nice"]
+    ["3/4", "Awesome"],
+    ["4/4", "Nice"],
+    ["5/4", "Nice"],
+    ["6/4", "Nice"],
+    ["6/8", "Nice"]
   ],
   "tempo": [
+    ["80", "Standard"],
+    ["96", "Standard"],
+    ["100", "Standard"],
+    ["105", "Standard"],
+    ["108", "Standard"],
     ["120", "Standard"],
-    ["144", "Lok"]
+    ["128", "House"],
+    ["135", "Rock"],
+    ["140", "Trap"],
+    ["144", "Rock"],
+    ["150", "Hardstyle"],
+    ["160", "Dubstep"]
   ],
   "genre": [
-    ["Bluegrass", "Boring"],
-    ["Rock", "Nice"]
+    ["Acid techno", ""],
+    ["Afrobeat", ""],
+    ["Ambient", ""],
+    ["Avantgarde", ""],
+    ["Bluegrass", ""],
+    ["Blues", ""],
+    ["Calypso", ""],
+    ["Chiptune", ""],
+    ["Christian rock", ""],
+    ["Country", ""],
+    ["Drum & bass", ""],
+    ["Disco", ""],
+    ["Electroacoustic", ""],
+    ["Electronic rock", ""],
+    ["Electropop", ""],
+    ["Flamenco", ""],
+    ["Folk", ""],
+    ["Freestyle rap", ""],
+    ["Hip hop", ""],
+    ["House", ""],
+    ["Indian Pop", ""],
+    ["Industrial metal", ""],
+    ["Japanoise", ""],
+    ["Jazz", ""],
+    ["J-Pop", ""],
+    ["J-Rock", ""],
+    ["K-Pop", ""],
+    ["Latin", ""],
+    ["Metalcore", ""],
+    ["Noise", ""],
+    ["Psychedelic rock", ""],
+    ["Reggae", ""],
+    ["Rock", ""],
+    ["Ska", ""],
+    ["Symphonic metal", ""]
   ],
   "feel": [
     ["happy", "smile"],
     ["sad", "buhuu"]
+  ],
+  "modality": [
+  	["ionian"],
+  	["dorian"],
+  	["phrygian"],
+  	["lydian"],
+  	["mixolydian"],
+  	["aeolian"],
+  	["locrian"]
   ]
 }
