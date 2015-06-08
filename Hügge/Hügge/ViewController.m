@@ -120,4 +120,11 @@ Suggestion *suggestion;
     return YES;
 }
 
+- (IBAction)swipeRegistered:(id)sender {
+    NSLog(@"%@", [sender view]);
+    for (UIView *subview in self.view.subviews) {
+        NSLog(@"%@", subview);
+    }
+}
+
 @end

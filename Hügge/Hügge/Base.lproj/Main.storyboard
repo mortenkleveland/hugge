@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ffr-VQ-aYK">
+                            <view tag="1" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ffr-VQ-aYK">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.10000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tempo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8h-Dq-PS4">
@@ -35,6 +35,7 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.95294117649999999" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="a5M-Lf-fiV" secondAttribute="bottom" id="292-yl-sRI"/>
                                     <constraint firstAttribute="bottom" secondItem="a5M-Lf-fiV" secondAttribute="bottom" id="8YV-rL-6ht"/>
@@ -52,8 +53,11 @@
                                         <exclude reference="RPH-ok-Y0r"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GsN-Fa-Dl4" appends="YES" id="B1n-RQ-tda"/>
+                                </connections>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Uy-Kd-Nlm">
+                            <view tag="2" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Uy-Kd-Nlm">
                                 <rect key="frame" x="0.0" y="150" width="600" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.10000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time signature" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAF-di-Id3">
@@ -82,8 +86,11 @@
                                         <exclude reference="cCL-R8-159"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GsN-Fa-Dl4" appends="YES" id="Nyn-HY-0WM"/>
+                                </connections>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fju-cX-e9c">
+                            <view tag="5" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fju-cX-e9c">
                                 <rect key="frame" x="0.0" y="527" width="600" height="73"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Genre" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUw-mE-u5a">
@@ -113,7 +120,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nEL-We-ZxU">
+                            <view tag="4" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nEL-We-ZxU">
                                 <rect key="frame" x="0.0" y="409" width="600" height="78"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tonality" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKf-3J-4Dn">
@@ -153,7 +160,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ld-fc-Ibs">
+                            <view tag="3" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ld-fc-Ibs">
                                 <rect key="frame" x="0.0" y="300" width="600" height="78"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Feel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwX-Ns-zhL">
@@ -230,6 +237,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="GsN-Fa-Dl4">
+                    <connections>
+                        <action selector="swipeRegistered:" destination="vXZ-lx-hvc" id="1kA-yb-oz5"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
         </scene>
     </scenes>

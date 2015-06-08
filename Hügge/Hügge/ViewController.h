@@ -15,5 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *genreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tonalityLabel;
 
+- (IBAction)swipeRegistered:(id)sender;
+
 @end
 
