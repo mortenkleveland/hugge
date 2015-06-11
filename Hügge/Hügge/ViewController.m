@@ -18,6 +18,11 @@
 
 @end
 
+bool tempoLocked = false;
+bool timeSignatureLocked = false;
+bool tonalityLocked = false;
+bool genreLocked = false;
+bool feelLocked = false;
 NSMutableSet *tempos;
 NSMutableSet *genres;
 NSMutableSet *timeSignatures;
@@ -43,11 +48,11 @@ Suggestion *suggestion;
 
 - (Suggestion*)generateRandomSuggestion {
     Suggestion *suggestion = [[Suggestion alloc]init];
-    [suggestion setTempo:[[tempos allObjects] objectAtIndex:arc4random_uniform((unsigned)tempos.count)]];
-    [suggestion setTimeSignature:[[timeSignatures allObjects] objectAtIndex:arc4random_uniform((unsigned)timeSignatures.count)]];
-    [suggestion setTonality:[[tonalities allObjects] objectAtIndex:arc4random_uniform((unsigned)tonalities.count)]];
-    [suggestion setGenre:[[genres allObjects] objectAtIndex:arc4random_uniform((unsigned)genres.count)]];
-    [suggestion setFeel:[[feels allObjects] objectAtIndex:arc4random_uniform((unsigned)feels.count)]];
+    if (!tempoLocked) [suggestion setTempo:[[tempos allObjects] objectAtIndex:arc4random_uniform((unsigned)tempos.count)]];
+    if (!timeSignatureLocked) [suggestion setTimeSignature:[[timeSignatures allObjects] objectAtIndex:arc4random_uniform((unsigned)timeSignatures.count)]];
+    if (!tonalityLocked) [suggestion setTonality:[[tonalities allObjects] objectAtIndex:arc4random_uniform((unsigned)tonalities.count)]];
+    if (!genreLocked) [suggestion setGenre:[[genres allObjects] objectAtIndex:arc4random_uniform((unsigned)genres.count)]];
+    if (!feelLocked) [suggestion setFeel:[[feels allObjects] objectAtIndex:arc4random_uniform((unsigned)feels.count)]];
     return suggestion;
 }
 
