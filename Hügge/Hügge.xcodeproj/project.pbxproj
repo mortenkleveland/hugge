@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A4538321B2A031900C0CE3A /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4538311B2A031900C0CE3A /* DetailView.m */; };
 		5A488ACE1B249AA80047208E /* suggestions.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A488ACD1B249AA80047208E /* suggestions.json */; };
 		5A488AD71B249C920047208E /* Tempo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A488AD61B249C920047208E /* Tempo.m */; };
 		5A488ADA1B249CA20047208E /* Suggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A488AD91B249CA20047208E /* Suggestion.m */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A4538301B2A031900C0CE3A /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
+		5A4538311B2A031900C0CE3A /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
 		5A488ACD1B249AA80047208E /* suggestions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = suggestions.json; sourceTree = "<group>"; };
 		5A488AD51B249C920047208E /* Tempo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tempo.h; sourceTree = "<group>"; };
 		5A488AD61B249C920047208E /* Tempo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tempo.m; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 				5A6700181B2446A300D039DF /* Main.storyboard */,
 				5A67001B1B2446A300D039DF /* Images.xcassets */,
 				5A67001D1B2446A300D039DF /* LaunchScreen.xib */,
+				5A4538301B2A031900C0CE3A /* DetailView.h */,
+				5A4538311B2A031900C0CE3A /* DetailView.m */,
 				5AD9CB7D1B24F75A00473148 /* Feel.h */,
 				5AD9CB7E1B24F75A00473148 /* Feel.m */,
 				5A488ADB1B249CD00047208E /* Genre.h */,
@@ -260,6 +265,7 @@
 				5A488ADD1B249CD00047208E /* Genre.m in Sources */,
 				5A488AE01B249CDF0047208E /* TimeSignature.m in Sources */,
 				5A488ADA1B249CA20047208E /* Suggestion.m in Sources */,
+				5A4538321B2A031900C0CE3A /* DetailView.m in Sources */,
 				5AD9CB7F1B24F75A00473148 /* Feel.m in Sources */,
 				5A488AD71B249C920047208E /* Tempo.m in Sources */,
 			);
