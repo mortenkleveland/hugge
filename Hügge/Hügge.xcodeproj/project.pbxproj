@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A4538321B2A031900C0CE3A /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4538311B2A031900C0CE3A /* DetailView.m */; };
+		5A488ACE1B249AA80047208E /* suggestions.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A488ACD1B249AA80047208E /* suggestions.json */; };
+		5A488AD71B249C920047208E /* Tempo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A488AD61B249C920047208E /* Tempo.m */; };
+		5A488ADA1B249CA20047208E /* Suggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A488AD91B249CA20047208E /* Suggestion.m */; };
+		5A488ADD1B249CD00047208E /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A488ADC1B249CD00047208E /* Genre.m */; };
+		5A488AE01B249CDF0047208E /* TimeSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A488ADF1B249CDF0047208E /* TimeSignature.m */; };
+		5A6700111B2446A300D039DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6700101B2446A300D039DF /* main.m */; };
+		5A6700141B2446A300D039DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6700131B2446A300D039DF /* AppDelegate.m */; };
+		5A6700171B2446A300D039DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6700161B2446A300D039DF /* ViewController.m */; };
+		5A67001A1B2446A300D039DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6700181B2446A300D039DF /* Main.storyboard */; };
+		5A67001C1B2446A300D039DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A67001B1B2446A300D039DF /* Images.xcassets */; };
+		5A67001F1B2446A300D039DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A67001D1B2446A300D039DF /* LaunchScreen.xib */; };
+		5A67002B1B2446A300D039DF /* Hu_ggeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A67002A1B2446A300D039DF /* Hu_ggeTests.m */; };
+		5AD9CB7C1B24F43300473148 /* Tonality.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CB7B1B24F43300473148 /* Tonality.m */; };
+		5AD9CB7F1B24F75A00473148 /* Feel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CB7E1B24F75A00473148 /* Feel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A6700251B2446A300D039DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A6700031B2446A200D039DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A67000A1B2446A200D039DF;
+			remoteInfo = "Hügge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A4538301B2A031900C0CE3A /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
+		5A4538311B2A031900C0CE3A /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
+		5A488ACD1B249AA80047208E /* suggestions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = suggestions.json; sourceTree = "<group>"; };
+		5A488AD51B249C920047208E /* Tempo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tempo.h; sourceTree = "<group>"; };
+		5A488AD61B249C920047208E /* Tempo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tempo.m; sourceTree = "<group>"; };
+		5A488AD81B249CA20047208E /* Suggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Suggestion.h; sourceTree = "<group>"; };
+		5A488AD91B249CA20047208E /* Suggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Suggestion.m; sourceTree = "<group>"; };
+		5A488ADB1B249CD00047208E /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Genre.h; sourceTree = "<group>"; };
+		5A488ADC1B249CD00047208E /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Genre.m; sourceTree = "<group>"; };
+		5A488ADE1B249CDF0047208E /* TimeSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSignature.h; sourceTree = "<group>"; };
+		5A488ADF1B249CDF0047208E /* TimeSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeSignature.m; sourceTree = "<group>"; };
+		5A67000B1B2446A200D039DF /* Hügge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hügge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A67000F1B2446A300D039DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A6700101B2446A300D039DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A6700121B2446A300D039DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A6700131B2446A300D039DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A6700151B2446A300D039DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5A6700161B2446A300D039DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5A6700191B2446A300D039DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A67001B1B2446A300D039DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5A67001E1B2446A300D039DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5A6700241B2446A300D039DF /* HüggeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HüggeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6700291B2446A300D039DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A67002A1B2446A300D039DF /* Hu_ggeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hu_ggeTests.m; sourceTree = "<group>"; };
+		5AD9CB7A1B24F43300473148 /* Tonality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tonality.h; sourceTree = "<group>"; };
+		5AD9CB7B1B24F43300473148 /* Tonality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tonality.m; sourceTree = "<group>"; };
+		5AD9CB7D1B24F75A00473148 /* Feel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feel.h; sourceTree = "<group>"; };
+		5AD9CB7E1B24F75A00473148 /* Feel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A6700081B2446A200D039DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A6700211B2446A300D039DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A6700021B2446A200D039DF = {
+			isa = PBXGroup;
+			children = (
+				5A67000D1B2446A200D039DF /* Hügge */,
+				5A6700271B2446A300D039DF /* HüggeTests */,
+				5A67000C1B2446A200D039DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A67000C1B2446A200D039DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A67000B1B2446A200D039DF /* Hügge.app */,
+				5A6700241B2446A300D039DF /* HüggeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A67000D1B2446A200D039DF /* Hügge */ = {
+			isa = PBXGroup;
+			children = (
+				5A488ACD1B249AA80047208E /* suggestions.json */,
+				5A6700121B2446A300D039DF /* AppDelegate.h */,
+				5A6700131B2446A300D039DF /* AppDelegate.m */,
+				5A6700151B2446A300D039DF /* ViewController.h */,
+				5A6700161B2446A300D039DF /* ViewController.m */,
+				5A6700181B2446A300D039DF /* Main.storyboard */,
+				5A67001B1B2446A300D039DF /* Images.xcassets */,
+				5A67001D1B2446A300D039DF /* LaunchScreen.xib */,
+				5A4538301B2A031900C0CE3A /* DetailView.h */,
+				5A4538311B2A031900C0CE3A /* DetailView.m */,
+				5AD9CB7D1B24F75A00473148 /* Feel.h */,
+				5AD9CB7E1B24F75A00473148 /* Feel.m */,
+				5A488ADB1B249CD00047208E /* Genre.h */,
+				5A488ADC1B249CD00047208E /* Genre.m */,
+				5A488AD81B249CA20047208E /* Suggestion.h */,
+				5A488AD91B249CA20047208E /* Suggestion.m */,
+				5A488AD51B249C920047208E /* Tempo.h */,
+				5A488AD61B249C920047208E /* Tempo.m */,
+				5A488ADE1B249CDF0047208E /* TimeSignature.h */,
+				5A488ADF1B249CDF0047208E /* TimeSignature.m */,
+				5AD9CB7A1B24F43300473148 /* Tonality.h */,
+				5AD9CB7B1B24F43300473148 /* Tonality.m */,
+				5A67000E1B2446A200D039DF /* Supporting Files */,
+			);
+			path = "Hügge";
+			sourceTree = "<group>";
+		};
+		5A67000E1B2446A200D039DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A67000F1B2446A300D039DF /* Info.plist */,
+				5A6700101B2446A300D039DF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A6700271B2446A300D039DF /* HüggeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A67002A1B2446A300D039DF /* Hu_ggeTests.m */,
+				5A6700281B2446A300D039DF /* Supporting Files */,
+			);
+			path = "HüggeTests";
+			sourceTree = "<group>";
+		};
+		5A6700281B2446A300D039DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A6700291B2446A300D039DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A67000A1B2446A200D039DF /* Hügge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A67002E1B2446A300D039DF /* Build configuration list for PBXNativeTarget "Hügge" */;
+			buildPhases = (
+				5A6700071B2446A200D039DF /* Sources */,
+				5A6700081B2446A200D039DF /* Frameworks */,
+				5A6700091B2446A200D039DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hügge";
+			productName = "Hügge";
+			productReference = 5A67000B1B2446A200D039DF /* Hügge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A6700231B2446A300D039DF /* HüggeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A6700311B2446A300D039DF /* Build configuration list for PBXNativeTarget "HüggeTests" */;
+			buildPhases = (
+				5A6700201B2446A300D039DF /* Sources */,
+				5A6700211B2446A300D039DF /* Frameworks */,
+				5A6700221B2446A300D039DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A6700261B2446A300D039DF /* PBXTargetDependency */,
+			);
+			name = "HüggeTests";
+			productName = "HüggeTests";
+			productReference = 5A6700241B2446A300D039DF /* HüggeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A6700031B2446A200D039DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Morten G. Kleveland";
+				TargetAttributes = {
+					5A67000A1B2446A200D039DF = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					5A6700231B2446A300D039DF = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 5A67000A1B2446A200D039DF;
+					};
+				};
+			};
+			buildConfigurationList = 5A6700061B2446A200D039DF /* Build configuration list for PBXProject "Hügge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A6700021B2446A200D039DF;
+			productRefGroup = 5A67000C1B2446A200D039DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A67000A1B2446A200D039DF /* Hügge */,
+				5A6700231B2446A300D039DF /* HüggeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A6700091B2446A200D039DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A67001A1B2446A300D039DF /* Main.storyboard in Resources */,
+				5A67001F1B2446A300D039DF /* LaunchScreen.xib in Resources */,
+				5A67001C1B2446A300D039DF /* Images.xcassets in Resources */,
+				5A488ACE1B249AA80047208E /* suggestions.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A6700221B2446A300D039DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A6700071B2446A200D039DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6700171B2446A300D039DF /* ViewController.m in Sources */,
+				5AD9CB7C1B24F43300473148 /* Tonality.m in Sources */,
+				5A6700141B2446A300D039DF /* AppDelegate.m in Sources */,
+				5A6700111B2446A300D039DF /* main.m in Sources */,
+				5A488ADD1B249CD00047208E /* Genre.m in Sources */,
+				5A488AE01B249CDF0047208E /* TimeSignature.m in Sources */,
+				5A488ADA1B249CA20047208E /* Suggestion.m in Sources */,
+				5A4538321B2A031900C0CE3A /* DetailView.m in Sources */,
+				5AD9CB7F1B24F75A00473148 /* Feel.m in Sources */,
+				5A488AD71B249C920047208E /* Tempo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A6700201B2446A300D039DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A67002B1B2446A300D039DF /* Hu_ggeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A6700261B2446A300D039DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A67000A1B2446A200D039DF /* Hügge */;
+			targetProxy = 5A6700251B2446A300D039DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A6700181B2446A300D039DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A6700191B2446A300D039DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A67001D1B2446A300D039DF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A67001E1B2446A300D039DF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A67002C1B2446A300D039DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A67002D1B2446A300D039DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A67002F1B2446A300D039DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hügge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5A6700301B2446A300D039DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hügge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5A6700321B2446A300D039DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HüggeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hügge.app/Hügge";
+			};
+			name = Debug;
+		};
+		5A6700331B2446A300D039DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HüggeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hügge.app/Hügge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A6700061B2446A200D039DF /* Build configuration list for PBXProject "Hügge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A67002C1B2446A300D039DF /* Debug */,
+				5A67002D1B2446A300D039DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A67002E1B2446A300D039DF /* Build configuration list for PBXNativeTarget "Hügge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A67002F1B2446A300D039DF /* Debug */,
+				5A6700301B2446A300D039DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A6700311B2446A300D039DF /* Build configuration list for PBXNativeTarget "HüggeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6700321B2446A300D039DF /* Debug */,
+				5A6700331B2446A300D039DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A6700031B2446A200D039DF /* Project object */;
+}
