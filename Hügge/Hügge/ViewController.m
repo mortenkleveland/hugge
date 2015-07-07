@@ -47,6 +47,19 @@ Suggestion *suggestion;
     self.tonalityView = [[DetailView alloc]init];
     self.genreView = [[DetailView alloc]init];
     
+    NSString *fontName = @"GeosansLight-NMS";
+    [self.tempoLabel setFont:[UIFont fontWithName:fontName size:self.tempoLabel.font.pointSize]];
+    [self.timeSignatureLabel setFont:[UIFont fontWithName:fontName size:self.timeSignatureLabel.font.pointSize]];
+    [self.genreLabel setFont:[UIFont fontWithName:fontName size:self.genreLabel.font.pointSize]];
+    [self.tonalityLabel setFont:[UIFont fontWithName:fontName size:self.tonalityLabel.font.pointSize]];
+    [self.feelLabel setFont:[UIFont fontWithName:fontName size:self.feelLabel.font.pointSize]];
+    
+    [self.tempoBackgroundLabel setFont:[UIFont fontWithName:fontName size:self.tempoBackgroundLabel.font.pointSize]];
+    [self.timeSignatureBackgroundLabel setFont:[UIFont fontWithName:fontName size:self.timeSignatureBackgroundLabel.font.pointSize]];
+    [self.genreBackgroundLabel setFont:[UIFont fontWithName:fontName size:self.genreBackgroundLabel.font.pointSize]];
+    [self.tonalityBackgroundLabel setFont:[UIFont fontWithName:fontName size:self.tonalityBackgroundLabel.font.pointSize]];
+    [self.feelBackgroundLabel setFont:[UIFont fontWithName:fontName size:self.feelBackgroundLabel.font.pointSize]];
+    
     [self parseJSON];
     suggestion = [self generateRandomSuggestion];
     [self updateLabels];

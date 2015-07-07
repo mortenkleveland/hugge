@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
@@ -244,14 +244,19 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="feelBackgroundLabel" destination="bcv-MC-pe9" id="vDS-1k-VTK"/>
                         <outlet property="feelLabel" destination="GwX-Ns-zhL" id="kLs-t6-LZ4"/>
                         <outlet property="feelView" destination="1Ld-fc-Ibs" id="M6K-pE-GDK"/>
+                        <outlet property="genreBackgroundLabel" destination="c5Z-js-46T" id="LLS-vZ-vxM"/>
                         <outlet property="genreLabel" destination="LUw-mE-u5a" id="5wQ-bD-Xb0"/>
                         <outlet property="genreView" destination="fju-cX-e9c" id="sTu-MI-7Lj"/>
+                        <outlet property="tempoBackgroundLabel" destination="Y8h-Dq-PS4" id="WxL-p8-L6O"/>
                         <outlet property="tempoLabel" destination="a5M-Lf-fiV" id="PQb-HL-W9C"/>
                         <outlet property="tempoView" destination="Ffr-VQ-aYK" id="Xj7-8a-VcM"/>
-                        <outlet property="timeSignatureLabel" destination="iHs-aQ-Khb" id="XDO-l7-T70"/>
+                        <outlet property="timeSignatureBackgroundLabel" destination="vAF-di-Id3" id="rRg-xj-pQV"/>
+                        <outlet property="timeSignatureLabel" destination="iHs-aQ-Khb" id="bIf-Dl-X3a"/>
                         <outlet property="timeSignatureView" destination="3Uy-Kd-Nlm" id="oaR-vy-Y4e"/>
+                        <outlet property="tonalityBackgroundLabel" destination="DPa-C2-1MM" id="hmU-Bu-eUz"/>
                         <outlet property="tonalityLabel" destination="TKf-3J-4Dn" id="vXs-HP-t7Q"/>
                         <outlet property="tonalityView" destination="nEL-We-ZxU" id="26S-ae-g2S"/>
                     </connections>

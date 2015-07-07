@@ -22,6 +22,8 @@
 		5A67002B1B2446A300D039DF /* Hu_ggeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A67002A1B2446A300D039DF /* Hu_ggeTests.m */; };
 		5AD9CB7C1B24F43300473148 /* Tonality.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CB7B1B24F43300473148 /* Tonality.m */; };
 		5AD9CB7F1B24F75A00473148 /* Feel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CB7E1B24F75A00473148 /* Feel.m */; };
+		5AFCCBDC1B4BE01C00AC76B2 /* geonms-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AFCCBDA1B4BDFFA00AC76B2 /* geonms-webfont.ttf */; };
+		5AFCCBDE1B4BE72600AC76B2 /* GeosansLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AFCCBDD1B4BE70A00AC76B2 /* GeosansLight.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		5AD9CB7B1B24F43300473148 /* Tonality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tonality.m; sourceTree = "<group>"; };
 		5AD9CB7D1B24F75A00473148 /* Feel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feel.h; sourceTree = "<group>"; };
 		5AD9CB7E1B24F75A00473148 /* Feel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feel.m; sourceTree = "<group>"; };
+		5AFCCBDA1B4BDFFA00AC76B2 /* geonms-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geonms-webfont.ttf"; sourceTree = "<group>"; };
+		5AFCCBDD1B4BE70A00AC76B2 /* GeosansLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GeosansLight.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 		5A6700281B2446A300D039DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5AFCCBDA1B4BDFFA00AC76B2 /* geonms-webfont.ttf */,
+				5AFCCBDD1B4BE70A00AC76B2 /* GeosansLight.ttf */,
 				5A6700291B2446A300D039DF /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -237,6 +243,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AFCCBDE1B4BE72600AC76B2 /* GeosansLight.ttf in Resources */,
+				5AFCCBDC1B4BE01C00AC76B2 /* geonms-webfont.ttf in Resources */,
 				5A67001A1B2446A300D039DF /* Main.storyboard in Resources */,
 				5A67001F1B2446A300D039DF /* LaunchScreen.xib in Resources */,
 				5A67001C1B2446A300D039DF /* Images.xcassets in Resources */,
