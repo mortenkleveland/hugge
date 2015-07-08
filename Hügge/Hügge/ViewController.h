@@ -14,8 +14,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *tempoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeSignatureLabel;
 @property (weak, nonatomic) IBOutlet UILabel *feelLabel;
-@property (weak, nonatomic) IBOutlet UILabel *genreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tonalityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *genreLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *tempoBackgroundLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeSignatureBackgroundLabel;

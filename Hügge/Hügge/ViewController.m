@@ -48,29 +48,71 @@ Suggestion *suggestion;
     self.genreView = [[DetailView alloc]init];
     
     [self parseJSON];
-    suggestion = [self generateRandomSuggestion];
+    //suggestion = [self generateRandomSuggestion];
     [self updateLabels];
+    
+    [self animateViews]; // Animating all labels, since some of them can be larger than their superviews
+}
+
+- (void)animateViews {
+    [self animateView:self.tempoBackgroundLabel fromPosition:-self.tempoBackgroundLabel.frame.size.width withDuration:1.0];
+    [self animateView:self.timeSignatureBackgroundLabel fromPosition:self.timeSignatureBackgroundLabel.frame.size.width withDuration:1.5];
+    [self animateView:self.feelBackgroundLabel fromPosition:self.feelBackgroundLabel.frame.size.width withDuration:1.0];
+    [self animateView:self.tonalityBackgroundLabel fromPosition:-self.tonalityBackgroundLabel.frame.size.width withDuration:1.0];
+    [self animateView:self.genreBackgroundLabel fromPosition:self.genreBackgroundLabel.frame.size.width withDuration:1.0];
+}
+
+- (void)animateView:(UIView*)view fromPosition:(CGFloat)position withDuration:(double)duration {
+    [UIView animateWithDuration: duration
+                     animations: ^{
+                         CGRect frame = view.frame;
+                         frame.origin.x = position;
+                         view.frame = frame;
+                     } completion:^(BOOL finished) {
+                         suggestion = [self generateRandomSuggestion];
+                         [self updateLabels];
+                     }];
+}
+
+- (void)shakeAnimation:(UILabel*)label {
+    int randomRepeatCount = arc4random_uniform(2) + 3;
+    int randomOffset = arc4random_uniform(3) + 2;
+    CABasicAnimation *shake = [CABasicAnimation animationWithKeyPath:@"position"];
+    [shake setDuration:0.07];
+    [shake setRepeatCount:randomRepeatCount];
+    [shake setAutoreverses:YES];
+    [shake setFromValue:[NSValue valueWithCGPoint: CGPointMake(label.center.x - randomOffset, label.center.y)]];
+    [shake setToValue:[NSValue valueWithCGPoint: CGPointMake(label.center.x + randomOffset, label.center.y)]];
+    [label.layer addAnimation:shake forKey:@"position"];
 }
 
 - (Suggestion*)generateRandomSuggestion {
     Suggestion *suggestion = [[Suggestion alloc]init];
-    if (!tempoLocked) [suggestion setTempo:[[tempos allObjects] objectAtIndex:arc4random_uniform((unsigned)tempos.count)]];
-    if (!timeSignatureLocked) [suggestion setTimeSignature:[[timeSignatures allObjects] objectAtIndex:arc4random_uniform((unsigned)timeSignatures.count)]];
-    if (!tonalityLocked) [suggestion setTonality:[[tonalities allObjects] objectAtIndex:arc4random_uniform((unsigned)tonalities.count)]];
-    if (!genreLocked) [suggestion setGenre:[[genres allObjects] objectAtIndex:arc4random_uniform((unsigned)genres.count)]];
-    if (!feelLocked) [suggestion setFeel:[[feels allObjects] objectAtIndex:arc4random_uniform((unsigned)feels.count)]];
+    if (!tempoLocked) {
+        [suggestion setTempo:[[tempos allObjects] objectAtIndex:arc4random_uniform((unsigned)tempos.count)]];
+        [self shakeAnimation:self.tempoBackgroundLabel];
+    }
+    if (!timeSignatureLocked) {
+        [suggestion setTimeSignature:[[timeSignatures allObjects] objectAtIndex:arc4random_uniform((unsigned)timeSignatures.count)]];
+        [self shakeAnimation:self.timeSignatureBackgroundLabel];
+    }
+    if (!tonalityLocked) {
+        [suggestion setTonality:[[tonalities allObjects] objectAtIndex:arc4random_uniform((unsigned)tonalities.count)]];
+        [self shakeAnimation:self.feelBackgroundLabel];
+    }
+    if (!genreLocked) {
+        [suggestion setGenre:[[genres allObjects] objectAtIndex:arc4random_uniform((unsigned)genres.count)]];
+        [self shakeAnimation:self.tonalityBackgroundLabel];
+    }
+    if (!feelLocked) {
+        [suggestion setFeel:[[feels allObjects] objectAtIndex:arc4random_uniform((unsigned)feels.count)]];
+        [self shakeAnimation:self.genreBackgroundLabel];
+    }
     return suggestion;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)layoutSubviews
-{
-    //[super layoutSubviews];
-    self.tempoLabel.preferredMaxLayoutWidth = self.view.bounds.size.width;
 }
 
 - (void)updateLabels {
